@@ -40,7 +40,7 @@ NoCountryApplication implements CommandLineRunner {
 		mailSender.setHost("smtp.gmail.com");
 		mailSender.setPort(587);
 
-		mailSender.setUsername("sodaclaro@gmail.com");
+		mailSender.setUsername("mimailsoda.com");
 		mailSender.setPassword("kyhqfgubfggrxzkt");
 
 		Properties props = mailSender.getJavaMailProperties();

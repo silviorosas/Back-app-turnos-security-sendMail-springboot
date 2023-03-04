@@ -22,7 +22,7 @@ public class MailService {
 
     public void sendMail (String destino,String asunto,String texto){
         SimpleMailMessage mensaje = new SimpleMailMessage();
-        mensaje.setFrom("sodaclaro@gmail.com");
+        mensaje.setFrom("mimail@gmail.com");
         mensaje.setTo(destino);
         mensaje.setSubject(asunto);
         mensaje.setText(texto);

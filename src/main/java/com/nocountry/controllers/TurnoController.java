@@ -41,10 +41,11 @@ public class TurnoController {
     @PostMapping
     public Turno guardar(@RequestBody Turno turno){
 
+        //"fecha": "2023-05-15T23:45:00" formato para json
         Turno newTurno = service.saveTurno(turno);
-        if(newTurno != null){
+        /*if(newTurno != null){
             mailService.sendMail(newTurno.getEmail(),"Turno en Medicare",newTurno.toString());
-        }
+        }*/
         return newTurno;
     }
 
